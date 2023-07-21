@@ -51,7 +51,7 @@ function Skills(props) {
                   <br />
                   <h3>{rows.title}</h3>
                   {rows.items.map((item) => (
-                    <div key={item.title} style={{ display: 'inline-block' }}>
+                    <div key={item.title} style={{ display: 'inline-block' }} className='skills-div'>
                       <img
                         style={styles.iconStyle}
                         src={item.icon}
