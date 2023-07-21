@@ -1,33 +1,22 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "Software Engineer Intern",
+            "subtitle": "CSAA, a AAA Insurer",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Learned about web development, AWS, and Google Tag Manager",
+                "Worked on user stories that went into production"
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "05/23 – 08/23"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
+            "title": "Free Peer Tutor",
+            "subtitle": "UCO",
             "workType": "Freelance",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Helped students study for exams, do labs, and work on projects"
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "01/21 – Present"
         }
     ]
 }

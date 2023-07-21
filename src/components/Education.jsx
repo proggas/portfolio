@@ -7,6 +7,8 @@ import { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
+
+
 import '../css/education.css';
 
 function Education(props) {
@@ -39,12 +41,15 @@ function Education(props) {
     }
   }, []);
 
+  let div_class = theme.color === '#eee' ? 'education-div-light' : 'education-div-dark';
+  let classes = ["section-content-container", div_class];
+
   return (
     <>
       <Header title={header} />
       {data ? (
         <Fade>
-          <div style={{ width }} className="section-content-container">
+          <div id="education-div" style={{ width }} className={classes.join(" ")}>
             <Container>
               <Chrono
                 hideControls
@@ -74,7 +79,7 @@ function Education(props) {
             </Container>
           </div>
         </Fade>
-      ) : <FallbackSpinner /> }
+      ) : <FallbackSpinner />}
     </>
   );
 }

@@ -9,9 +9,21 @@ import MainApp from './MainApp';
 import GlobalStyles from './theme/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
 
+let color = null;
+
 function App() {
   window.matchMedia = null;
   const darkMode = useDarkMode(true);
+
+  color = darkMode.value ? 'body-dark' : 'body-light';
+
+  if (color === 'body-dark') {
+    document.body.classList.remove('body-light');
+  } else {
+    document.body.classList.remove('body-dark');
+  }
+
+  document.body.classList.add(color);
 
   return (
     <AppContext.Provider value={{ darkMode }}>
@@ -25,6 +37,7 @@ function App() {
       </ThemeProvider>
     </AppContext.Provider>
   );
+
 }
 
 export default App;

@@ -1,19 +1,22 @@
 {
-    "education":[
+    "education": [
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+            "title": "Aug 2020 - May 2024",
+            "cardTitle": "Computer Science Major, Math Minor",
+            "cardSubtitle": "University of Central Oklahoma",
+            "cardDetailedText": "GPA - 4.0",
+            "icon": {
+                "src": "images/education/uco.png"
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "Aug 2016 - May 2020",
+            "cardTitle": "Edmond North High School",
+            "cardSubtitle": "Edmond, OK",
+            "cardDetailedText": "GPA - 4.0",
+            "icon": {
+                "src": "images/education/north.png"
+            }
         }
     ]
 }

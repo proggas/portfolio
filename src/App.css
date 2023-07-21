@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
   align-items: center;
@@ -9,8 +8,26 @@
 }
 
 .navbar-custom {
-  font-size:large;
+  font-size: large;
 }
+
+.resumeImage {
+  border: 1px solid black;
+}
+
+.education-div-dark {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.education-div-light {
+  background-color: rgba(1, 1, 1, 0.3);
+}
+
+
+.div_bg {
+  background-color: white !important;
+}
+
 
 .navbar__link {
   margin-left: 0.75em;
@@ -33,7 +50,7 @@
   width: 0;
 }
 
- .navbar__link:hover::after {
+.navbar__link:hover::after {
   visibility: visible;
   width: 40%;
 }
@@ -94,7 +111,7 @@ section.timeline-card-content p.card-sub-title {
   margin-top: 10px;
 }
 
-section.timeline-card-content div.card-description > p {
+section.timeline-card-content div.card-description>p {
   font-size: 1.1em;
   margin-top: 10px;
   font-weight: 500;
@@ -132,7 +149,7 @@ section.timeline-card-content div.card-description > p {
   .navbar__link--active::after {
     width: 0;
   }
-  
+
   .navbar__link--active:hover::after {
     width: 0;
   }
@@ -147,4 +164,3 @@ section.timeline-card-content div.card-description > p {
   font-weight: bold;
   margin-bottom: 25px;
 }
-

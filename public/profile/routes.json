@@ -24,6 +24,11 @@
             "component": "Projects",
             "path": "/projects",
             "headerTitle": "Projects"
+        },
+        {
+            "component": "Resume",
+            "path": "/resume",
+            "headerTitle": "Resume"
         }
     ]
 }

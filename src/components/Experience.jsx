@@ -10,6 +10,8 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/experience.css';
 
+let color = null;
+
 const styles = {
   ulStyle: {
     listStylePosition: 'outside',
@@ -34,6 +36,8 @@ function Experience(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
   const [data, setData] = useState(null);
+
+  color = theme.color === '#eee' ? 'rgba(1, 1, 1, 0.3)' : 'rgba(211, 211, 211, 0.3)';
 
   useEffect(() => {
     fetch(endpoints.experiences, {
@@ -64,22 +68,22 @@ function Experience(props) {
                       style={styles.itemStyle}
                       bodyContainerStyle={{ color: theme.color }}
                     >
-                      <h2 className="item-title">
+                      <h2 className="item-title" style={{ background: color }}>
                         {item.title}
                       </h2>
-                      <div style={styles.subtitleContainerStyle}>
+                      <div style={{ ...styles.subtitleContainerStyle, background: color }}>
                         <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
                           {item.subtitle}
                         </h4>
                         {item.workType && (
-                        <h5 style={styles.inlineChild}>
-                    &nbsp;·
-                          {' '}
-                          {item.workType}
-                        </h5>
+                          <h5 style={styles.inlineChild}>
+                            &nbsp;·
+                            {' '}
+                            {item.workType}
+                          </h5>
                         )}
                       </div>
-                      <ul style={styles.ulStyle}>
+                      <ul style={{ ...styles.ulStyle, background: color }}>
                         {item.workDescription.map((point) => (
                           <div key={point}>
                             <li>
@@ -100,7 +104,7 @@ function Experience(props) {
               </Timeline>
             </Container>
           </div>
-        ) : <FallbackSpinner /> }
+        ) : <FallbackSpinner />}
     </>
   );
 }

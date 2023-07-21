@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
+import { ThemeContext } from 'styled-components';
+
+let color = null;
 
 const styles = {
   nameStyle: {
@@ -11,6 +14,9 @@ const styles = {
   },
   inlineChild: {
     display: 'inline-block',
+    fontSize: '2em',
+    fontWeight: 'bold',
+
   },
   mainContainer: {
     height: '100%',
@@ -18,11 +24,17 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    position: 'relative'
   },
+
 };
 
 function Home() {
   const [data, setData] = useState(null);
+  const theme = useContext(ThemeContext);
+
+  color = theme.color === '#eee' ? 'rgba(1, 1, 1, 0.3)' : 'rgba(211, 211, 211, 0.3)';
+
 
   useEffect(() => {
     fetch(endpoints.home, {
@@ -34,22 +46,22 @@ function Home() {
   }, []);
 
   return data ? (
-    <Fade>
-      <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
-        <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-          <Typewriter
-            options={{
-              loop: true,
-              autoStart: true,
-              strings: data?.roles,
-            }}
-          />
-        </div>
-        <Social />
+    //<Fade>
+    <div style={{ ...styles.mainContainer, background: color }}>
+      <h1 style={styles.nameStyle}>{data?.name}</h1>
+      <div style={{ flexDirection: 'row' }}>
+        <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+        <Typewriter
+          options={{
+            loop: true,
+            autoStart: true,
+            strings: data?.roles,
+          }}
+        />
       </div>
-    </Fade>
+      <Social />
+    </div>
+    //</Fade>
   ) : <FallbackSpinner />;
 }
 
