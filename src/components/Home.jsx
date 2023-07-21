@@ -46,22 +46,22 @@ function Home() {
   }, []);
 
   return data ? (
-    //<Fade>
-    <div style={{ ...styles.mainContainer, background: color }}>
-      <h1 style={styles.nameStyle}>{data?.name}</h1>
-      <div style={{ flexDirection: 'row' }}>
-        <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-        <Typewriter
-          options={{
-            loop: true,
-            autoStart: true,
-            strings: data?.roles,
-          }}
-        />
+    <Fade>
+      <div style={{ ...styles.mainContainer, background: color }}>
+        <h1 style={styles.nameStyle}>{data?.name}</h1>
+        <div style={{ flexDirection: 'row' }}>
+          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+          <Typewriter
+            options={{
+              loop: true,
+              autoStart: true,
+              strings: data?.roles,
+            }}
+          />
+        </div>
+        <Social />
       </div>
-      <Social />
-    </div>
-    //</Fade>
+    </Fade>
   ) : <FallbackSpinner />;
 }
 

@@ -9,16 +9,28 @@
                     "title": "JavaScript"
                 },
                 {
+                    "icon": "images/skills/html.png",
+                    "title": "HTML"
+                },
+                {
+                    "icon": "images/skills/css.png",
+                    "title": "CSS"
+                },
+                {
                     "icon": "images/skills/java.png",
                     "title": "Java"
                 },
                 {
-                    "icon": "images/skills/C++_logo.png",
+                    "icon": "images/skills/c-plus-plus.svg",
                     "title": "C++"
                 },
                 {
                     "icon": "images/skills/sql.jpg",
                     "title": "SQL"
+                },
+                {
+                    "icon": "images/skills/firebase.png",
+                    "title": "Firebase"
                 }
             ]
         },

@@ -57,7 +57,7 @@ function Skills(props) {
                         src={item.icon}
                         alt={item.title}
                       />
-                      <p>{item.title}</p>
+                      <p><b>{item.title}</b></p>
                     </div>
                   ))}
                 </div>
@@ -65,7 +65,7 @@ function Skills(props) {
             </Container>
           </div>
         </Fade>
-      ) : <FallbackSpinner /> }
+      ) : <FallbackSpinner />}
     </>
   );
 }

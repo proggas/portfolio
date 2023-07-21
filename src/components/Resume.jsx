@@ -4,6 +4,7 @@ import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
+import Header from './Header';
 
 
 const styles = {
@@ -22,14 +23,13 @@ const styles = {
         alignItems: 'center',
         position: 'relative'
     },
-    resume_div: {
-        marginTop: "300px",
-        marginBot: "500px",
+    resume_header: {
+        marginTop: '400px',
     }
 
 };
 
-function Resume() {
+function Resume({ header }) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -42,17 +42,17 @@ function Resume() {
     }, []);
 
     return data ? (
-        //<Fade>
-        <div style={styles.mainContainer}>
-            <h1 style={styles.nameStyle}>Resume</h1>
-            <div style={styles.resume_div}>
+        <>
 
-                <img src="../images/resume/resume_1.png" width="50%" className="resumeImage"></img>
+            <div style={styles.mainContainer}>
+                <h1 style={{ ...styles.resume_header }} className='resume-h1 header'>{header}</h1>
+                <div>
+                    <img src="../images/resume/resume_1.png" width="50%" className="resumeImage resume-pic"></img>
+
+                </div>
 
             </div>
-
-        </div>
-        //</Fade>
+        </>
     ) : <FallbackSpinner />;
 }
 
