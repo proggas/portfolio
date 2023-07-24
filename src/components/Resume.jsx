@@ -9,7 +9,6 @@ const styles = {
     },
     inlineChild: {
         display: 'inline-block',
-
     },
     mainContainer: {
         height: '100%',
@@ -44,9 +43,7 @@ function Resume({ header }) {
                 <h1 style={{ ...styles.resume_header }} className='resume-h1 header'>{header}</h1>
                 <div>
                     <img src="../images/resume/resume_1.png" width="50%" className="resumeImage resume-pic"></img>
-
                 </div>
-
             </div>
         </>
     ) : <FallbackSpinner />;

@@ -1,11 +1,11 @@
 {
-  "short_name": "Mayank Agarwal",
-  "name": "Mayank Agarwal - Portfolio",
+  "short_name": "Progga Singha",
+  "name": "Progga Singha - Portfolio",
   "icons": [
     {
-      "src": "images/logo.png",
+      "src": "images/favicon.png",
       "type": "image/png",
-      "sizes": "425x225"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
