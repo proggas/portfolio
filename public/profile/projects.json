@@ -3,7 +3,7 @@
         {
             "image": "images/projects/portfolio.png",
             "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n - Different Themes Supported\n - Deployed with AWS",
+            "bodyText": "- Developer Portfolio Website made in React\n - Supports different themes\n - Supports formatting for different devices\n - Deployed using AWS S3",
             "tags": [
                 "React",
                 "Portfolio",
