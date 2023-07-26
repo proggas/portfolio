@@ -18,6 +18,7 @@ const styles = {
     textAlign: 'left',
     fontSize: '1.2em',
     fontWeight: 500,
+    padding: '10px',
   },
   introImageContainer: {
     margin: 10,
@@ -55,18 +56,17 @@ function About(props) {
       <Header title={header} />
       <div className="section-content-container">
         <Container>
-          {data
-            ? (
-              <Fade>
-                <Row>
-                  <Col style={{ ...styles.introTextContainer, background: color }}>
-                    {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" height="400" className="about-pfp" />
-                  </Col>
-                </Row>
-              </Fade>
+          {data ?
+            (
+                <div className='about-div about-div-phone'>
+                    <div style={ {...styles.introTextContainer, background: color} }
+                    className="about-text-phone about-text">
+                        {parseIntro(data.about)}
+                    </div>
+                    <div style={ {...styles.introImageContainer} }>
+                        <img src={data?.imageSource} alt="profile" className="about-pfp about-pfp-phone" />
+                    </div>
+                </div>
             )
             : <FallbackSpinner />}
         </Container>
