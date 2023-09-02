@@ -17,6 +17,7 @@ const styles = {
     ulStyle: {
         listStylePosition: 'outside',
         paddingLeft: 20,
+        fontWeight: 'bold',
     },
     subtitleContainerStyle: {
         marginTop: 10,

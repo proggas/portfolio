@@ -25,6 +25,12 @@ function Resume({ header }) {
         <>
             <Header title={header} />
             <div>
+                <a href="../profile/resume_1.pdf" download>
+                   <h3>Download PDF of Resume</h3> 
+                </a>
+            </div>
+            <br></br>
+            <div>
                 <img src="../images/resume/resume_1.png" width="50%" className="resumeImage resume-pic"></img>
             </div>
         </>
