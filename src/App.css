@@ -1,3 +1,5 @@
+/** Styles for Various Pages */
+
 .App {
     text-align: center;
     align-items: center;
@@ -136,7 +138,7 @@ section.timeline-card-content div.card-description>p {
     .about-pfp {
         width: 70%;
     }
-} 
+}
 
 
 @media only screen and (max-width: 1000px) {

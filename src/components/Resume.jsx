@@ -4,15 +4,12 @@ import FallbackSpinner from './FallbackSpinner';
 import Header from './Header';
 
 
-const styles = {
-    resume_header: {
-        marginTop: '400px',
-    }
-};
-
 function Resume({ header }) {
+    /** Initializes the state 'data' */
     const [data, setData] = useState(null);
 
+
+    /** Grabs data from the json file for the Resume Page when it loads */
     useEffect(() => {
         fetch(endpoints.resume, {
             method: 'GET',
@@ -22,6 +19,8 @@ function Resume({ header }) {
             .catch((err) => err);
     }, []);
 
+
+    /** Returns HTML with info about the Resume Page */
     return data ? (
         <>
             <Header title={header} />

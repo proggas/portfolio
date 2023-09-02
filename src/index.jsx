@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 
 
+/** Renders elements in the root of the document */
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root'),
 );
 
 

@@ -1,15 +1,15 @@
 {
-  "short_name": "Progga Singha",
-  "name": "Progga Singha - Portfolio",
-  "icons": [
-    {
-      "src": "images/favicon.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Progga Singha",
+    "name": "Progga Singha - Portfolio",
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }

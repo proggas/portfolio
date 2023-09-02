@@ -1,24 +1,25 @@
+/** Styles for the body and background */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
 .body-light {
-  background: url('./images/home/light.jpg') center center fixed no-repeat !important;
-  background-size: cover !important;
+    background: url('./images/home/light.jpg') center center fixed no-repeat !important;
+    background-size: cover !important;
 }
 
 .body-dark {
-  background: url('./images/home/dark.jpg') center center fixed no-repeat !important;
-  background-size: cover !important;
+    background: url('./images/home/dark.jpg') center center fixed no-repeat !important;
+    background-size: cover !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }

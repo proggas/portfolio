@@ -4,34 +4,34 @@ import PropTypes from 'prop-types';
 import AppContext from '../AppContext';
 
 function ThemeToggler(props) {
-  const { onClick } = props;
-  const handleOnChange = (darkMode) => {
-    darkMode.toggle();
-    onClick();
-  };
+    const { onClick } = props;
+    const handleOnChange = (darkMode) => {
+        darkMode.toggle();
+        onClick();
+    };
 
-  return (
-    <>
-      <AppContext.Consumer>
-        {(values) => (
-          <div style={{ marginBottom: 8 }}>
-            <DarkModeToggle
-              onChange={() => handleOnChange(values.darkMode)}
-              checked={values.darkMode.value}
-              size={50}
-            />
-          </div>
-        )}
-      </AppContext.Consumer>
-    </>
-  );
+    return (
+        <>
+            <AppContext.Consumer>
+                {(values) => (
+                    <div style={{ marginBottom: 8 }}>
+                        <DarkModeToggle
+                            onChange={() => handleOnChange(values.darkMode)}
+                            checked={values.darkMode.value}
+                            size={50}
+                        />
+                    </div>
+                )}
+            </AppContext.Consumer>
+        </>
+    );
 }
 
 ThemeToggler.propTypes = {
-  onClick: PropTypes.func,
+    onClick: PropTypes.func,
 };
 ThemeToggler.defaultProps = {
-  onClick: () => {},
+    onClick: () => { },
 };
 
 export default ThemeToggler;
