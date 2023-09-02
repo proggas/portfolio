@@ -4,6 +4,12 @@
             "image": "images/projects/portfolio.png",
             "title": "Dev Portfolio",
             "bodyText": "- Developer Portfolio Website made in React\n - Supports different themes\n - Supports formatting for different devices\n - Deployed using AWS S3",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/proggas/portfolio"
+                }
+            ],
             "tags": [
                 "React",
                 "Portfolio",
